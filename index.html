@@ -1,11 +1,45 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <script type="text/javascript" href="node_modules/bootstrap/dist/bootstrap.js"></script> -->
+    <!-- <script type="text/javascript" href="js/codigo.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <title>Mis ejercicos con jquery</title>
   </head>
   <body>
+    <h1>Al fin</h1>
+<script>
+$(document).on('ready',function (){
+$('#prueba').text('<p>Hola mundo!</p>');
+$('.prueba').html('<strong>Estoy usando JQUERY</strong>')
+
+
+
+});
+
+
+</script>
+
+<div class="container">
+  <div class="row">
+    <div id="prueba"></div>
+    <div class="prueba"></div>
+  </div>
+<br><br>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-md-6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
 
   </body>
+  <!-- <script type="text/javascript" href="node_modules/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" href="node_modules/jquery/dist/jquery.min.js"></script> -->
 </html>

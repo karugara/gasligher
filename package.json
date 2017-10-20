@@ -1,0 +1,25 @@
+{
+  "name": "gasligher",
+  "version": "1.0.0",
+  "description": "es un proyecto de puerbas que hago",
+  "main": "codigo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karugara/gasligher.git"
+  },
+  "keywords": [
+    "repo",
+    "repo",
+    "and",
+    "repo"
+  ],
+  "author": "roy el vikingo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karugara/gasligher/issues"
+  },
+  "homepage": "https://github.com/karugara/gasligher#readme"
+}
