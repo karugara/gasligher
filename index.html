@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html ng-app ="ToDoList">
   <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <!-- <script type="text/javascript" href="node_modules/bootstrap/dist/bootstrap.js"></script> -->
-    <!-- <script type="text/javascript" href="js/codigo.js"></script> -->
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <title>Mis ejercicos con jquery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>angular js</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script  src="node_modules/angular/angular.min.js">
+  </script>
+  <script  src="node_modules/angular-local-storage/dist/angular-local-storage.min.js">
+  </script>
+  <!-- <script src="js/angular.min.js">
+  </script> -->
+  <!-- <script src="js/angular-local-storage-min.js">
+  </script> -->
+  <script src="js/controller.js">
+  </script>
   </head>
-  <body>
-    <h1>Al fin</h1>
-<script>
-$(document).on('ready',function (){
-$('#prueba').text('<p>Hola mundo!</p>');
-$('.prueba').html('<strong>Estoy usando JQUERY</strong>')
+  <body ng-controller="ToDoController">
+    <ul>
+      <li ng-repeat="actividad in todo">
+        {{actividad.descripcion}} -
+        {{actividad.fecha}}
+      </li>
+    </ul>
+    <form ng-submit="addActv()">
+      <input type="text" ng-model="newActv.descripcion">
+      <input type="datetime" ng-model="newActv.fecha">
+      <input type="submit" value="guardar actividad">
+    </form>
 
 
 
-});
 
 
-</script>
-
-<div class="container">
-  <div class="row">
-    <div id="prueba"></div>
-    <div class="prueba"></div>
-  </div>
-<br><br>
-  <div class="row">
-    <div class="col-md-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="col-md-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </div>
-</div>
-
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
-  <!-- <script type="text/javascript" href="node_modules/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" href="node_modules/jquery/dist/jquery.min.js"></script> -->
 </html>
