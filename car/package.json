@@ -1,0 +1,29 @@
+{
+  "name": "buscandobath",
+  "version": "1.0.0",
+  "description": "este es un trabajo de maquetacion webings",
+  "main": "index.html",
+  "scripts": {
+    "test": "na"
+  },
+  "repository": {
+    "type": "git",
+    "url": "na"
+  },
+  "keywords": [
+    "bi",
+    "bpo",
+    "bip",
+    "bpo",
+    "bu",
+    "bob"
+  ],
+  "author": "elculiao",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.6",
+    "tooltip.js": "^1.1.6"
+  }
+}
